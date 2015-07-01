@@ -8,4 +8,4 @@ RUN gem install --no-document \
 
 WORKDIR /work
 
-ENTRYPOINT [ "compass compile --force --output-style=compressed --trace" ]
+ENTRYPOINT [ "compass", "compile --force --output-style=compressed --trace" ]
