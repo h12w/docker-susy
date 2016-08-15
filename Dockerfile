@@ -1,5 +1,8 @@
-FROM ruby
+FROM ruby:alpine
 MAINTAINER Hǎiliàng Wáng <w@h12.me>
+
+RUN apk add --no-cache \
+  build-base
 
 RUN gem install --no-document \
     compass \
